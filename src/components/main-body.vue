@@ -4,19 +4,78 @@
     </div>
     <div class="news">
         <div class="left-news">
-           <div class="zixun">
-            <ul>
-                <li>这是一句话</li>
-                <li>这是一句话</li>
-                <li>这是一句话</li>
-                <li>这是一句话</li>
-                <li>这是一句话</li>
-                <li>这是一句话</li>
-                <li>这是一句话</li>
-                <li>这是一句话</li>
-                <li>这是一句话</li>
+           <div class="zixun-mian">
+            <div class="zixun">
+                <div class="title">
+                <img src="../assets/images/public-icon1.png" alt="" style="width: 20px; height: 32px;">
+                <span>资讯</span>
+                <img src="../assets/images/public-icon2.png" alt="" style="width: 20px; height: 32px;">
+            </div>
+            <div class="list-1">
+                <ul>
+                <li><a href="#">【声明】故宫博物院关于“数字藏品”的声明</a></li>
+                <li><a href="#">【严正声明】关于我院依法对“故宫博物院”享有名称权和对...</a></li>
+                <li><a href="#">【声明】关于故宫博物院在职、离退休人员参加社会文物鉴定...</a></li>
+                </ul>
+
+            </div>
+            <ul class="under-list-1">
+                <li>
+                    <a href="#">
+                    关于2026年教师和本科院校、专科院校学生主题免费开放日的公告
+                    </a>
+                    <p class="time">
+                        01-15
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                    故宫博物院2026年寒假期间 未成年人团队快速预约、检票措施
+                    </a>
+                    <p class="time">
+                        01-10
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                    关于2026年春节期间故宫博物院开放时间的公告
+                    </a>
+                    <p class="time">
+                        01-05
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                    关于养心殿重新开放的公告
+                    </a>
+                    <p class="time">
+                        12-28
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                    关于2026年故宫博物院年票发售的公告
+                    </a>
+                    <p class="time">
+                    12-20
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                    关于2025年医务人员和志愿者主题免费开放日的公告
+                    </a>
+                    <p class="time">
+                        12-15
+                    </p>
+                </li>
+           
             </ul>
+            </div>
+                <div class="pic">
+                <img src="../assets/images/zixun-photo.jpg" alt="">
+                </div>
            </div>
+           
            <div class="under-zixun">
                 <img src="../assets/images/underZixun.jpg" alt="">
            </div>
@@ -118,22 +177,32 @@
     flex-grow: none;
     flex-basis: auto;
     overflow: hidden;
+   flex-wrap: wrap;
 }
-.zixun, .gonggao{
+ .gonggao{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
     padding: 30px;
     padding-left: 40px;
 }
-.left-news{
-    width: 60%;
-    padding: 0 10px;
-    height: auto;
-    box-sizing: border-box;
-    
+.zixun{
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 30px;
+    padding-right: 0px;
+    background-image: url(../assets/images/home_block1_news_bg.jpg);
+    background-repeat: repeat;
+    height: 500px;
+    margin-bottom: 20px;
 }
-.zixun ul li, .gonggao ul li{
+.zixun-mian{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.gonggao ul li{
     list-style: none;
     color: aliceblue;
     font-size: 14px;
@@ -143,9 +212,31 @@
     font-weight: normal;
     display: flex;
     flex: none;
+    
 }
+.zixun ul li{
+    list-style: none;
+    color: aliceblue;
+    padding: 7px;
+    margin: 6px;
+    font-family: 'Microsoft Yahei', 'PingFang SC', Arial, sans-serif;
+    font-weight: normal;}
  .gonggao ul li p:last-child{
     margin-left: auto;
+}
+.zixun ul li p:last-child{
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 16px;
+}
+.zixun .list-1 ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-family: 'Microsoft Yahei', 'PingFang SC', Arial, sans-serif;
+    white-space: nowrap;    
+    overflow: hidden;      
+    text-overflow: ellipsis;
 }
 
 .zixun ul li a, .gonggao ul li a{
@@ -153,21 +244,18 @@
     color: white;
     font-weight: normal;
     font-family: 'Microsoft Yahei', 'PingFang SC', Arial, sans-serif;
+    white-space: nowrap;    
+    overflow: hidden;      
+    text-overflow: ellipsis;
 }
 .zixun ul li::before, .gonggao ul li::before{
     content: "• ";
     color: #ffffff; /* 小圆点颜色 */
-    font-weight: bold;
     display: inline-block;
     width: 1em; /* 小圆点与文字的距离 */
     margin-left: -1em; /* 调整小圆点位置 */
 }
-.zixun {
-    background-image: url(../assets/images/home_block1_news_bg.jpg);
-    background-repeat: repeat;
-    height: 500px;
-    margin-bottom: 20px;
-}
+
 .gonggao ul{
     margin-top: 20px;
 }
@@ -177,11 +265,16 @@
     background-size: cover;
     
 }
-
+.left-news{
+    width: 950px;
+    height: 100%;
+    box-sizing: border-box;
+    min-width: 800px;
+    margin-right: 30px;
+}
 .right-news{
-    width: 40%;
-    padding: 0 20px;
-    height: auto;
+    width: 650px;
+    height: 100%;
     box-sizing: border-box;
 }
 .title{
@@ -212,5 +305,75 @@ time{
     background-image: url(../assets/images/png6.png);
     background-repeat: repeat;
     margin-bottom: 30px;
+     min-width: 650px;
 }
+.list-1 ul{
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 1;
+}
+.list-1 ul li{
+    list-style: none;
+    color: aliceblue;
+    font-size: 16px;
+}
+.list-1 ul li::before{
+    content: "";
+    background-image: url(../assets/images/index-icon2-1.png);
+    display: inline-block;
+    width: 1em; /* 小圆点与文字的距离 */
+    margin-left: -1em; /* 调整小圆点位置 */
+    height: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    margin-right: 8px;
+}
+.pic {
+    width: 440px;
+    height: 500px;
+    background: no-repeat center center / cover;
+    background-image: url(../assets/images/side.jpg);
+}
+.under-list-1{
+    margin-top: 20px;
+    margin-left: 10px;
+    line-height: 1.5;
+    color: #cccccc;
+    font-weight: 300;
+    font-family: 'Microsoft Yahei', 'PingFang SC', Arial, sans-serif;
+    font-size: 14px;
+}
+.under-list-1 li{
+    margin-bottom: 15px;
+    display: flex;
+    flex: none;
+    white-space: nowrap;   
+    text-overflow: ellipsis
+}
+@media screen and (max-width: 1920px) {
+    .zixun{
+        max-width: 510px;
+    }
+    .zixun .list-1 ul li a{
+        
+    }
+    
+}
+/* 笔记本电脑半屏适配 */
+@media screen and (max-width: 960px) {
+    .left-news{
+       min-width: 850px;
+    }
+    .right-news{
+       min-width: 850px;
+    }
+    .news{
+       padding-left: 20px;
+    }
+    
+}
+/* 平板适配 */
+
+
 </style>

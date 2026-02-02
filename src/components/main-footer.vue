@@ -1,11 +1,11 @@
 <template>
   <div class="footer">
-      <p>© 2026 学生在线 版权所有</p>
+    <p>© 2026 学生在线 版权所有</p>
   </div>
 
 </template>
 <style scoped>
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +24,12 @@
   box-sizing: border-box;
   line-height: 1.5;
   z-index: 2;
-  font-size: 14px;  
+  font-size: 14px;
   unicode-bidi: isolate;
   font-family: 'Microsoft Yahei', 'PingFang SC', Arial, sans-serif;
   box-sizing: border-box;
   bottom: 0px;
 }
 </style>
-<script>    
+<script>
 </script>
