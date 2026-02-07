@@ -19,7 +19,12 @@ import mainFooter from '../components/main-footer.vue';
 import mainBanner from '../components/main-banner.vue';
 import mainBody from '../components/main-body.vue';
 import topBody from '../components/top-body.vue';
+import underMainbody from '../components/under-mainbody.vue'
+import UnderMainbody from '../components/under-mainbody.vue'
+import HDYJ from '../components/HDYJ.vue'
+import homeFinal from '../components/home-final.vue'
 </script>
+
 
 <template>
   <div class="main">
@@ -33,6 +38,15 @@ import topBody from '../components/top-body.vue';
 </div>
 <div>
       <main-body />
+</div>
+<div>
+    <under-mainbody/>
+</div>
+<div>
+  <HDYJ/>
+</div>
+<div>
+  <home-final/>
 </div>
     <div>
       <main-footer />

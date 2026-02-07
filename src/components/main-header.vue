@@ -3,8 +3,8 @@
 </script>
 <template>
 
-  <div class="head">
-    <nav class="nav">
+  <div class="head" >
+    <nav class="nav" >
       <div class="logo" style="font-family: kaiti;"></div>
       <ul class="nav-list">
         <li class="nav-item"><a href="#" class="active">首页</a></li>
