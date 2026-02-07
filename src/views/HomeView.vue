@@ -28,29 +28,29 @@ import homeFinal from '../components/home-final.vue'
 
 <template>
   <div class="main">
-     <main-header />
+     <main-header  />
   </div>
   <div>
     <main-banner />
   </div>
 <div>
-      <top-body />
+      <top-body class="flag" v-observe="'active'"/>
 </div>
 <div>
       <main-body />
 </div>
 <div>
-    <under-mainbody/>
+    <under-mainbody />
 </div>
 <div>
-  <HDYJ/>
+  <HDYJ />
 </div>
 <div>
-  <home-final/>
+  <home-final />
 </div>
-    <div>
+<div>
       <main-footer />
-    </div>
+</div>
  
 
   

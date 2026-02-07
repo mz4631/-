@@ -3,7 +3,7 @@
 </script>
 <template>
 <div class="box">
-            <div class="gonggao">
+            <div class="gonggao-1">
                 <div class="title">
                     <img src="../assets/images/public-icon1.png" alt="" style="width: 20px; height: 32px;">
                     <span>博物馆活动</span>
@@ -163,7 +163,7 @@ div ul li a:hover{
     gap: 30px;
     padding-left: 30px;
 }
-.gonggao {
+.gonggao-1 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -182,7 +182,7 @@ div ul li a:hover{
      min-width: 550px;
 }
 
-.gonggao ul li {
+.gonggao-1 ul li {
     list-style: none;
     color: aliceblue;
     font-size: 14px;
@@ -206,13 +206,13 @@ div ul li a:hover{
     flex: none;
 
 }
-.gonggao ul li p:last-child {
+.gonggao-1 ul li p:last-child {
     margin-left: auto;
 }
 .gonggao-2 ul li p:last-child {
     margin-left: auto;
 }
-.gonggao ul li a {
+.gonggao-1 ul li a {
     text-decoration: none;
     color: white;
     font-weight: normal;
@@ -230,7 +230,7 @@ div ul li a:hover{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.gonggao ul li::before {
+.gonggao-1 ul li::before {
     content: "• ";
     color: #ffffff;
     /* 小圆点颜色 */
@@ -250,14 +250,14 @@ div ul li a:hover{
     margin-left: -1em;
     /* 调整小圆点位置 */
 }
-.gonggao ul {
+.gonggao-1 ul {
     margin-top: 20px;
 }
 .gonggao-2 ul {
     margin-top: 20px;
 }
 
-.gonggao {
+.gonggao-1 {
     background-image: url(../assets/images/png6.png);
 
 }

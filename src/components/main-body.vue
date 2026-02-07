@@ -3,9 +3,9 @@
 
     </div>
     <div class="news">
-        <div class="left-news">
+        <div class="left-news"   >
             <div class="zixun-mian">
-                <div class="zixun">
+                <div class="zixun" v-observe="'active'">
                     <div class="title">
                         <img src="../assets/images/public-icon1.png" alt="" style="width: 20px; height: 32px;">
                         <span>资讯</span>
@@ -71,17 +71,17 @@
 
                     </ul>
                 </div>
-                <div class="pic">
+                <div class="pic" v-observe="'active'">
                     <img src="../assets/images/zixun-photo.jpg" alt="">
                 </div>
             </div>
 
-            <div class="under-zixun">
+            <div class="under-zixun" v-observe="'active'">
                 <img style="height: 451px;" src="../assets/images/underZixun.jpg" alt="">
             </div>
         </div>
-        <div class="right-news">
-            <div class="top-gonggao">
+        <div class="right-news"  v-observe="'active'">
+            <div class="top-gonggao" v-observe="'active'">
                 <div class="top-top">
                     <p style="color: #8fb6d9; font-size: 18px; font-weight: 300;">这是日期</p>
                     <p style="font-size: 34px; color: white;">这是标题</p>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="gonggao">
+            <div class="gonggao" v-observe="'active'">
                 <div class="title">
                     <img src="../assets/images/public-icon1.png" alt="" style="width: 20px; height: 32px;">
                     <span>公告</span>
