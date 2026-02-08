@@ -123,9 +123,15 @@
                 </ul>
             </div>
             <div class="books">
-                <p class="p1"></p>
-                <p class="p2"></p>
-                <p class="p3"></p>
+                <p class="p1">
+                    <img src="../assets/images/院刊-1.png" alt="">
+                </p>
+                <p class="p2">
+                    <img src="../assets/images/院刊-2.png" alt="">
+                </p>
+                <p class="p3">
+                    <img src="../assets/images/院刊-3.png" alt="">
+                </p>
 
             </div>
 </div>
@@ -145,16 +151,32 @@ div ul li a:hover{
 .books P{
     width: 33.33%;
     height: 100%;
+    
+}
+.books .p2 img{
+    position: relative;
+    top: 15%;
+    left: 50px;
+}
+.books .p3 img{
+    position: relative;
+    top: 15%;
+    left: 50px;
+}
+.books .p1 img{
+    position: relative;
+    top: 15%;
+    left: 15px;
 }
 .books .p1{
-    background-image: url(../assets/images/png6.png);
+    background-image: url(../assets/images/首页-刊物封面-1.jpg);
     
 }
 .books .p2{
-    background-image: url(../assets/images/png6.png);
+    background-image: url(../assets/images/首页-刊物封面-2.jpg);
 }
 .books .p3{
-    background-image: url(../assets/images/png6.png);
+    background-image: url(../assets/images/首页-刊物封面-3.jpg);
 }
 .box{
     height: 360px;

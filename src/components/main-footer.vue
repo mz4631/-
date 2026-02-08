@@ -1,5 +1,14 @@
 <template>
   <div class="footer">
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
     <p>© 2026 学生在线 版权所有</p>
   </div>
 
@@ -9,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 0;
   background: #272727;
   position: relative;
@@ -29,6 +39,14 @@
   font-family: 'Microsoft Yahei', 'PingFang SC', Arial, sans-serif;
   box-sizing: border-box;
   bottom: 0px;
+}
+.footer div ul {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
 }
 </style>
 <script>

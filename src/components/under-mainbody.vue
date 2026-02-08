@@ -26,7 +26,7 @@
         <img src="../assets/images/right-1.jpg" alt="">
 </div>
     <div class="right">
-        <img src="../assets/images/right-1.jpg" alt="">
+        <img src="../assets/images/right-2.jpg" alt="">
     </div>
     <div class="right">
         <img src="../assets/images/right-3.jpg" alt="">
