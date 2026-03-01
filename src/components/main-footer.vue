@@ -1,13 +1,13 @@
 <template>
   <div class="footer">
     <div>
-      <ul>
+      <!-- <ul>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> -->
     </div>
     <p>© 2026 学生在线 版权所有</p>
   </div>
